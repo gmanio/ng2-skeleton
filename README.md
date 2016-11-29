@@ -2,7 +2,7 @@
 
 
 
-powered by Angular2 + Webpack2.
+powered by Angular2 with AoT.
 
 * * *
 

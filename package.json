@@ -1,51 +1,32 @@
 {
   "name": "ng2-skeleton",
   "version": "1.0.0",
-  "description": "powered by Angular2 + Webpack2",
-  "keywords": [
-    "angular2",
-    "webpack",
-    "typescript"
-  ],
+  "description": "powered by Angular2",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config config/webpack.dev.js --content-base src/",
-    "clean:package": "rimraf node_modules"
+    "dev": "set NODE_ENV=dev && webpack-dev-server --config webpack.config.js"
   },
   "author": "GmanPark",
   "license": "MIT",
-  "engines": {
-    "node": ">= 4.2.1",
-    "npm": ">= 3"
+  "homepage": "https://github.com/gmanio/ng2-skeleton#readme",
+  "dependencies": {
+    "@angular/common": "^2.2.3",
+    "@angular/compiler": "^2.2.3",
+    "@angular/core": "^2.2.3",
+    "@angular/http": "^2.2.3",
+    "@angular/platform-browser": "^2.2.3",
+    "@angular/platform-browser-dynamic": "^2.2.3",
+    "@angular/router": "^3.2.3",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.0-rc.4",
+    "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "@angularclass/hmr": "^1.2.2",
-    "@angularclass/hmr-loader": "^3.0.2",
-    "@types/node": "^6.0.51",
-    "angular2-template-loader": "^0.6.0",
-    "awesome-typescript-loader": "^3.0.0-beta.3",
-    "css-loader": "^0.26.0",
+    "awesome-typescript-loader": "^3.0.0-beta.9",
     "file-loader": "^0.9.0",
-    "json-loader": "^0.5.4",
     "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.4",
-    "to-string-loader": "^1.1.5",
     "typescript": "^2.0.10",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.11",
-    "webpack-merge": "^0.17.0"
-  },
-  "dependencies": {
-    "@angular/common": "^2.2.2",
-    "@angular/compiler": "^2.2.2",
-    "@angular/core": "^2.2.2",
-    "@angular/forms": "^2.2.2",
-    "@angular/http": "^2.2.2",
-    "@angular/platform-browser": "^2.2.2",
-    "@angular/platform-browser-dynamic": "^2.2.2",
-    "@angular/router": "^3.2.2",
-    "core-js": "^2.4.1",
-    "ie-shim": "^0.1.0",
-    "rxjs": "^5.0.0-rc.4",
-    "zone.js": "^0.7.1"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^1.0.1"
   }
 }

@@ -1,22 +1,16 @@
-import {Component} from '@angular/core';
-import {Router} from "@angular/router";
+/**
+ * Created on 2016-11-29.
+ * @author: Gman Park
+ */
+
+
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css']
+    encapsulation: ViewEncapsulation.None,
+    selector: 'app',
+    template: `
+<div>It works</div>`
 })
 
-export class AppComponent {
-    constructor(private router: Router) {
-        this.router = router;
-
-        this.setEvents();
-    }
-
-    setEvents() {
-        this.router.events.subscribe((val) => {
-            console.log(val);
-        });
-    }
-}
+export class AppComponent {}
